@@ -36,6 +36,34 @@ class VentanaGrid extends JFrame{
 		JRadioButton opcion1 = new JRadioButton("only required fields");
 		bg.add(opcion1);
 		metodoMagico(opcion1, 0, 8, 1, 1);
+		JRadioButton opcion2 = new JRadioButton("all fields");
+		bg.add(opcion2);
+		metodoMagico(opcion2, 0, 9, 1, 1);
+		
+		JLabel txtTexto4 = new JLabel("(edit required fields in the form builder)");
+		metodoMagico(txtTexto4, 0, 10, 2, 1);
+		
+		JCheckBox check2 = new JCheckBox("interest group fields");
+		metodoMagico(check2, 0, 12, 1, 1);
+		JCheckBox check3 = new JCheckBox("required field indicators");
+		metodoMagico(check3, 0, 13, 1, 1);
+		
+		JLabel txtTexto5 = new JLabel("Set form width");
+		metodoMagico(txtTexto5, 0, 14, 1, 1);
+		JTextField caja2 = new JTextField(10);
+		metodoMagico(caja2, 0, 15, 2, 1);
+		
+		JLabel txtTexto6 = new JLabel("Enhance your form");
+		metodoMagico(txtTexto6, 0, 17, 1, 1);
+		
+		JCheckBox check4 = new JCheckBox("enable evil popup mode");
+		metodoMagico(check4, 0, 18, 1, 1);
+		JCheckBox check5 = new JCheckBox("disable all JavaScript");
+		metodoMagico(check5, 0, 19, 1, 1);
+		JCheckBox check6 = new JCheckBox("include archive link");
+		metodoMagico(check6, 0, 20, 1, 1);
+		JCheckBox check7 = new JCheckBox("include MonkeyRewards link");
+		metodoMagico(check7, 0, 21, 1, 1);
 		
 		pack();
 		setVisible(true);
