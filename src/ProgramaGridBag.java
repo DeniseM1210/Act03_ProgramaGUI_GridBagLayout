@@ -18,6 +18,7 @@ class VentanaGrid extends JFrame{
 		metodoMagico(txtTexto1, 0, 0, 1, 2);
 		
 		JLabel txtTexto2 = new JLabel("Form Options");
+		gbc.fill = GridBagConstraints.HORIZONTAL;
 		metodoMagico(txtTexto2, 0, 2, 1, 1);
 		
 		JLabel txtTexto3 = new JLabel("Include the following:");
@@ -27,6 +28,7 @@ class VentanaGrid extends JFrame{
 		metodoMagico(check1, 0, 5, 1, 1);
 		
 		JTextField caja1 = new JTextField(10);
+		gbc.fill = GridBagConstraints.HORIZONTAL;
 		metodoMagico(caja1, 0, 6, 1, 2);
 		
 		ButtonGroup bg = new ButtonGroup();
@@ -62,12 +64,15 @@ class VentanaGrid extends JFrame{
 		JCheckBox check7 = new JCheckBox("include MonkeyRewards link");
 		metodoMagico(check7, 0, 21, 1, 1);
 		
+		JLabel x = new JLabel("    ");
+		metodoMagico(x, 3, 0, 20, 1);
 		JLabel txtTexto7 = new JLabel("Preview");
 		metodoMagico(txtTexto7, 4, 0, 1, 1);
 		
 		JLabel txtTexto8 = new JLabel("Email Adress");
 		metodoMagico(txtTexto8, 4, 2, 1, 1);
 		JFormattedTextField correo = new JFormattedTextField();
+		gbc.fill = GridBagConstraints.HORIZONTAL;
 		metodoMagico(correo, 4, 3, 1, 3);
 		
 		JLabel txtTexto9 = new JLabel("First Name");
@@ -88,9 +93,12 @@ class VentanaGrid extends JFrame{
 		JLabel txtTexto11 = new JLabel("Copy/ Paste onto your site");
 		metodoMagico(txtTexto11, 4, 12, 1, 1);
 		JTextArea area1 = new JTextArea();
+		gbc.fill = GridBagConstraints.VERTICAL;
+		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		area1.setLineWrap(true);
 		area1.setWrapStyleWord(true);
 		metodoMagico(area1, 4, 13, 7, 3);
+		
 		
 		pack();
 		setVisible(true);
