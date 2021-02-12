@@ -15,22 +15,19 @@ class VentanaGrid extends JFrame{
 		//setLayout(null);
 		
 		JLabel txtTexto1 = new JLabel("The clasic form includes all visible fields for this list");
-		metodoMagico(txtTexto1, 0, 0, 2, 1);
-		
-		JLabel txtTexto7 = new JLabel("Preview");
-		metodoMagico(txtTexto7, 4, 0, 1, 1);
+		metodoMagico(txtTexto1, 0, 0, 1, 2);
 		
 		JLabel txtTexto2 = new JLabel("Form Options");
 		metodoMagico(txtTexto2, 0, 2, 1, 1);
 		
 		JLabel txtTexto3 = new JLabel("Include the following:");
-		metodoMagico(txtTexto3, 0, 4, 1, 1);
+		metodoMagico(txtTexto3, 0, 3, 1, 1);
 		
 		JCheckBox check1 = new JCheckBox("a title for your form");
 		metodoMagico(check1, 0, 5, 1, 1);
 		
 		JTextField caja1 = new JTextField(10);
-		metodoMagico(caja1, 0, 6, 2, 1);
+		metodoMagico(caja1, 0, 6, 1, 2);
 		
 		ButtonGroup bg = new ButtonGroup();
 		JRadioButton opcion1 = new JRadioButton("only required fields");
@@ -41,7 +38,7 @@ class VentanaGrid extends JFrame{
 		metodoMagico(opcion2, 0, 9, 1, 1);
 		
 		JLabel txtTexto4 = new JLabel("(edit required fields in the form builder)");
-		metodoMagico(txtTexto4, 0, 10, 2, 1);
+		metodoMagico(txtTexto4, 0, 10, 1, 2);
 		
 		JCheckBox check2 = new JCheckBox("interest group fields");
 		metodoMagico(check2, 0, 12, 1, 1);
@@ -51,7 +48,7 @@ class VentanaGrid extends JFrame{
 		JLabel txtTexto5 = new JLabel("Set form width");
 		metodoMagico(txtTexto5, 0, 14, 1, 1);
 		JTextField caja2 = new JTextField(10);
-		metodoMagico(caja2, 0, 15, 2, 1);
+		metodoMagico(caja2, 0, 15, 1, 2);
 		
 		JLabel txtTexto6 = new JLabel("Enhance your form");
 		metodoMagico(txtTexto6, 0, 17, 1, 1);
@@ -64,6 +61,36 @@ class VentanaGrid extends JFrame{
 		metodoMagico(check6, 0, 20, 1, 1);
 		JCheckBox check7 = new JCheckBox("include MonkeyRewards link");
 		metodoMagico(check7, 0, 21, 1, 1);
+		
+		JLabel txtTexto7 = new JLabel("Preview");
+		metodoMagico(txtTexto7, 4, 0, 1, 1);
+		
+		JLabel txtTexto8 = new JLabel("Email Adress");
+		metodoMagico(txtTexto8, 4, 2, 1, 1);
+		JFormattedTextField correo = new JFormattedTextField();
+		metodoMagico(correo, 4, 3, 1, 3);
+		
+		JLabel txtTexto9 = new JLabel("First Name");
+		metodoMagico(txtTexto9, 4, 5, 1, 1);
+		JTextField caja3 = new JTextField(10);
+		metodoMagico(caja3, 4, 6, 1, 3);
+		
+		JLabel txtTexto10 = new JLabel("Last Name");
+		metodoMagico(txtTexto10, 4, 7, 1, 1);
+		JTextField caja4 = new JTextField(10);
+		metodoMagico(caja4, 4, 8, 1, 3);
+		
+		ImageIcon icono = new ImageIcon("src/img/icono.png");
+		JButton btnSubscribe = new JButton();
+		btnSubscribe.setIcon(icono);
+		metodoMagico(btnSubscribe, 4, 10, 1, 2);
+		
+		JLabel txtTexto11 = new JLabel("Copy/ Paste onto your site");
+		metodoMagico(txtTexto11, 4, 12, 1, 1);
+		JTextArea area1 = new JTextArea();
+		area1.setLineWrap(true);
+		area1.setWrapStyleWord(true);
+		metodoMagico(area1, 4, 13, 7, 3);
 		
 		pack();
 		setVisible(true);
